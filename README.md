@@ -3,7 +3,7 @@ QRCode.js is javascript library for making QRCode. QRCode.js supports Cross-brow
 QRCode.js has no dependencies.
 
 ## Basic Usages
-```
+```html
 <div id="qrcode"></div>
 <script type="text/javascript">
 new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
@@ -12,7 +12,7 @@ new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie
 
 or with some options
 
-```
+```html
 <div id="qrcode"></div>
 <script type="text/javascript">
 var qrcode = new QRCode(document.getElementById("qrcode"), {
@@ -21,7 +21,8 @@ var qrcode = new QRCode(document.getElementById("qrcode"), {
 	height: 128,
 	colorDark : "#000000",
 	colorLight : "#ffffff",
-	correctLevel : QRCode.CorrectLevel.H
+	correctLevel : QRCode.CorrectLevel.H,
+	useSVG: false
 });
 </script>
 ```
